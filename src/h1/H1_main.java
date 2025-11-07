@@ -12,10 +12,37 @@ public class H1_main
 		if( guthaben<0)
 		{
 			negativ = true;
+			
+			
+			if(Math.abs(guthaben)>monEingang)
+			{
+				rating-=1;
+				if (rating<0)
+				{
+					warnhinweis=true;
+				}
+				else
+				{
+					warnhinweis= false;
+				}
+			
+			}
+			else
+			{
+				rating+=1;
+			}
 		}
-		if(guthaben>0)
+		else if(guthaben>0)
 		{
-			rating=+3;
+			rating+=3;
+		}
+		else if(guthaben==0)
+		{
+			rating+=2;
+		}
+		else
+		{
+			warnhinweis = false;
 		}
 	}
 
