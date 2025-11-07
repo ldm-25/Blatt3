@@ -21,14 +21,7 @@ public class H2_main
 				}
 			}
 		}
-	if (schalt==true)
-		{
-		System.out.println(jahr+ "ist ein schaltjahr");
-		}
-	else
-	{
-		System.out.println(jahr + "ist kein schaltjahr");
-	}
+	
 	
 	
 	}
